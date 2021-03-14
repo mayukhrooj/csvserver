@@ -1,0 +1,152 @@
+ 1090  docker pull infracloudio/csvserver:latest
+ 1091  docker pull prom/prometheus:v2.22.0
+ 1092  docker container ls
+ 1093  infracloudio/csvserver:latest
+ 1094  docker start
+ 1095  docker ps
+ 1096  docker images
+ 1097  docker run 8cb989ef80b5
+ 1098  docker run -it infracloudio/csvserver /bin/bash
+ 1099  echo $((1 + $RANDOM % 10))
+ 1100  echo $((1 + $RANDOM % 1000))
+ 1101  echo $RANDOM
+ 1102  for i in $(seq 1 10); do echo $i;\ndone
+ 1103  for i in $(seq 1 10); do echo $i;done
+ 1104  for i in $(seq 0 9); do echo $i;done
+ 1105  for i in $(seq 1 10); do echo "$i, $((1 + $RANDOM % 1000))";done
+ 1106  for i in $(seq 0 9); do echo "$i, $((1 + $RANDOM % 1000))";done
+ 1107  vim gencsv.sh
+ 1108  chmod +x gencsv.sh
+ 1109  ./gencsv.sh 1
+ 1110  ./gencsv.sh 5
+ 1111  vim gencsv.sh
+ 1112  ./gencsv.sh 5
+ 1113  ls
+ 1114  cat inputFile
+ 1115  docker run 8cb989ef80b5
+ 1116  docker run --volume=`pwd`/inputFile:/csvserver/inputdata
+ 1117  docker run --volume=`pwd`/inputFile:/csvserver/inputdata 8cb989ef80b5
+ 1118  docker ps
+ 1119  docker exec -it 2dc7c22e17d7 /bin/bash
+ 1120  docker run --volume=`pwd`/inputFile:/csvserver/inputdata -p 9300:9393 8cb989ef80b5
+ 1121  docker ps
+ 1122  docker run --volume=`pwd`/inputFile:/csvserver/inputdata -p 9393:9300 8cb989ef80b5
+ 1123  docker ps
+ 1124  docker run --volume=`pwd`/inputFile:/csvserver/inputdata -p localhot:9393:9300 8cb989ef80b5
+ 1125  docker run --volume=`pwd`/inputFile:/csvserver/inputdata -p localhost:9393:9300 8cb989ef80b5
+ 1126  docker run --volume=`pwd`/inputFile:/csvserver/inputdata -p 127.0.0.1:9393:9300 8cb989ef80b5
+ 1127  docker ps
+ 1128  ip addr
+ 1129  docker run --volume=`pwd`/inputFile:/csvserver/inputdata -p 127.0.0.1:9393:9300 --env CSVSERVER_BORDER=Orange 8cb989ef80b5
+ 1130  docker ps
+ 1131  docker run --volume=`pwd`/inputFile:/csvserver/inputdata -p 127.0.0.1:9393:9300 --env CSVSERVER_BORDER=Orange 8cb989ef80b5
+ 1132  vim gencsv.sh
+ 1133  ./gencsv.sh 9
+ 1134  docker run --volume=`pwd`/inputFile:/csvserver/inputdata -p 127.0.0.1:9393:9300 --env CSVSERVER_BORDER=Orange 8cb989ef80b5
+ 1135  code docker-compose.yml
+ 1136  docker images
+ 1137  sudo curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose\n
+ 1138  sudo chmod +x /usr/local/bin/docker-compose\n
+ 1139  docker-compose --v
+ 1140  docker-compose --version
+ 1141  docker-compose up
+ 1142  docker-compose --v
+ 1143  docker-compose up
+ 1144  docker container rm $(docker container ls -aq)
+ 1145  docker ps
+ 1146  docker container ls -aq
+ 1147  docker container kill $(docker container ls -aq
+ 1148  docker container kill $(docker container ls -aq)
+ 1149  docker-compose down
+ 1150  docker-compose up
+ 1151  docker container kill $(docker container ls -aq)
+ 1152  docker container rm
+ 1153  docker container rm $(docker container ls -aq)
+ 1154  docker-compose down
+ 1155  docker-compose up
+ 1156  docker ps
+ 1157  docker kill 
+ 1158  docker container kill $(docker container ls -aq)
+ 1159  docker ps
+ 1160  docker container ls
+ 1161  docker container ls-a
+ 1162  docker container ls -a
+ 1163  docker container rm $(docker container ls -aq)
+ 1164  docker container ls -a
+ 1165  docker-compose up
+ 1166  code prometheus.yml
+ 1167  docker-compose down
+ 1168  cd..
+ 1169  cd ..
+ 1170  docker-compose up
+ 1171  docker ps
+ 1172  docker-compose up
+ 1173  cd 
+ 1174  docker ps
+ 1175  docker-compose up
+ 1176  docker-compose down
+ 1177  docker-compose up
+ 1178  docker-compose down
+ 1179  docker-compose up
+ 1180  docker-compose down
+ 1181* history
+ 1182* git --version
+ 1183* docker-compose up
+ 1184* docker-compose down
+ 1185* cd
+ 1186* docker-compose up
+ 1187* docker ps
+ 1188* docker exec -it 2dc7c22e17d7 /bin/bash
+ 1189* docker exec -it 1343a3fcfbf9 /bin/bash
+ 1190* docker exec -it 1343a3fcfbf9 /bin/sh
+ 1191* docker network ls
+ 1192* docker exec -it 1343a3fcfbf9 /bin/sh
+ 1193* docker ps 
+ 1194* docker exec -it d728afdd6a93 /bin/sh
+ 1195* docker-compose up
+ 1196* docker exec -it d728afdd6a93 /bin/sh
+ 1197* docker-compose up
+ 1198* cd
+ 1199* docker ps
+ 1200* docker exec -it 1343a3fcfbf9  /bin/sh
+ 1201* docker network ls
+ 1202* docker-compose up -d
+ 1203* docker ps
+ 1204* docker exec -it 46e61589ab30 /bin/sh
+ 1205* docker exec -it 0ffede0b93ba /bin/sh
+ 1206* docker ps
+ 1207* docker exec -it 46e61589ab30  /bin/sh
+ 1208* docker exec -it 0ffede0b93ba  /bin/sh
+ 1209* docker exec -it 46e61589ab30  /bin/sh
+ 1210* docker exec -it --user root 46e61589ab30  /bin/sh
+ 1211* docker-compose down
+ 1212* docker-compose up
+ 1213* ping google.com
+ 1214* docker-compose up
+ 1215* docker-compose down
+ 1216* docker-compose up
+ 1217* docker-compose down
+ 1218* docker-compose up
+ 1219* docker ps
+ 1220* docker exec -it --user root 2f57deb3e516  /bin/sh
+ 1221* docker exec -it --user root 1085b7b4b751  /bin/sh
+ 1222* docker network create --ipv6 --subnet=2001:3984:3989::/64 dockerbridge6~
+ 1223* docker network ls
+ 1224* docker-compose down
+ 1225* docker-compose up
+ 1226* docker network ls
+ 1227* docker-compose up
+ 1228* docker ps
+ 1229* docker exec -it 36fb81a039b1 /bin/sh
+ 1230* docker-compose down
+ 1231* docker-compose up
+ 1232* docker psh
+ 1233* docker ps
+ 1234* docker exec -it da8860bdf30d /bin/sh
+ 1235* curl -o ./part-1-output http://localhost:9393/raw
+ 1236* docker-compose up
+ 1237* curl -o ./part-1-output http://localhost:9393/raw
+ 1238* docker ps
+ 1239* docker logs 2438d7ba010b >& part-1-logs
+ 1240* docker-compose down
+
